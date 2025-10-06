@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     if ($existing['stock_quantity'] != $product['stockQuantity']) {
                         $historyQuery = "INSERT INTO stock_history 
                                         (product_id, old_stock, new_stock, change_type, notes, changed_by) 
-                                        VALUES (:product_id, :old_stock, :new_stock, 'SYNC', :notes, 'POS System')";
+                                        VALUES (:product_id, :old_stock, :new_stock, 'SALE', :notes, 'POS System')";
                         $historyStmt = $db->prepare($historyQuery);
                         $historyStmt->bindParam(':product_id', $existing['id']);
                         $historyStmt->bindParam(':old_stock', $existing['stock_quantity']);

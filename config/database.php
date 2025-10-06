@@ -3,7 +3,7 @@
 if (!class_exists('Database')) {
     class Database {
         private $host = "localhost";
-        private $db_name = "koteng_db";
+        private $db_name = "kotengca_db";
         private $username = "kotengca_db";
         private $password = "P@ssw0rd";
         public $conn;
