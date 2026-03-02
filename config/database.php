@@ -3,9 +3,9 @@
 if (!class_exists('Database')) {
     class Database {
         private $host = "localhost";
-        private $db_name = "kotengca_db";
-        private $username = "kotengca_db";
-        private $password = "P@ssw0rd";
+        private $db_name = "koteng_db";
+        private $username = "root";
+        private $password = "";
         public $conn;
         
         public function getConnection() {
